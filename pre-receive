@@ -6,6 +6,10 @@ from lib.javascript import get_receive_errors as get_javascript_errors
 from lib.php import get_receive_errors as get_php_errors
 from lib.php import get_receive_errors_using_phpmd
 from lib.common import *
+import sys
+
+reload(sys)
+sys.setdefaultencoding("utf8")
 
 if __name__ == "__main__":
     receive_able = True

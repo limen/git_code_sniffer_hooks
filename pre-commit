@@ -5,6 +5,10 @@ from termcolor import colored
 from lib.config import config
 from lib.javascript import get_commit_errors as get_javascript_errors
 from lib.php import get_commit_errors as get_php_errors
+import sys
+
+reload(sys)
+sys.setdefaultencoding("utf8")
 
 if __name__ == "__main__":
   javascript_errors = get_javascript_errors()

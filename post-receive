@@ -6,6 +6,10 @@ from termcolor import colored
 from lib.common import get_branch
 from lib.common import get_latest_commit_id
 from lib.common import get_merge_base
+import sys
+
+reload(sys)
+sys.setdefaultencoding("utf8")
 
 feature_branch_prefix = 'feature/'
 
